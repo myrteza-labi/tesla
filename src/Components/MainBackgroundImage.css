@@ -1,0 +1,6 @@
+.MainBackgroundImage {
+    background-image: url(../image/desktop_model_3_v2.jpeg); 
+    height: 100vh; 
+    background-position: center; 
+    background-size: cover; 
+}

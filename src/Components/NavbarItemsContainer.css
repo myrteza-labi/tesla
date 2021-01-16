@@ -1,0 +1,5 @@
+.NavbarItemsContainer {
+    border: solid 3px blue; 
+    display: inline-block; 
+    width: 100%; 
+}
