@@ -1,7 +1,5 @@
 .NavbarLogo {
-    height: 10px;  
+    height: 70px; 
+    color: black; 
     margin-left: 20px; 
-    position: absolute;
-    left:10px;
-    top:20px; 
 }

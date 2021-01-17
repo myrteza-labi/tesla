@@ -1,6 +1,18 @@
-.MainBackgroundImage {
-    background-image: url(../image/desktop_model_3_v2.jpeg); 
-    height: 100vh; 
-    background-position: center; 
-    background-size: cover; 
+@media screen and (max-width: 600px){
+    .MainBackgroundImage {
+        background-image: url(../image/mobile_model_3_v2.jpeg); 
+        height: 100vh; 
+        background-position: center; 
+        background-size: cover; 
+    }
+}
+
+
+@media screen and (min-width: 601px){
+    .MainBackgroundImage {
+        background-image: url(../image/desktop_model_3_v2.jpeg); 
+        height: 100vh; 
+        background-position: center; 
+        background-size: cover; 
+    }
 }

@@ -6,7 +6,7 @@ function NavbarItem(props){
     const carName = props.carName; 
 
     return (
-            <a className='NavbarItem'>{carName}</a>
+            <a href='#' className='NavbarItem'>{carName}</a>
     )
 }
 

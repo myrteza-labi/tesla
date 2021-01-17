@@ -5,6 +5,10 @@ import NavbarLogo from './NavbarLogo';
 import NavbarItemsContainer from './NavbarItemsContainer'; 
 import NavbarItem from './NavbarItem'; 
 import SideMenuBtn from './SideMenuBtn'; 
+import CarTitleName from './CarTitleName'; 
+import CarConfigBtn from './CarConfigBtn'; 
+import AsideMenu from './AsideMenu';  
+import './App.css';
 
 
 function App(){
@@ -15,7 +19,9 @@ function App(){
                         <NavbarLogo/>
                             <NavbarItem carName='MODEL 3'/>
                             <SideMenuBtn/>
-                    </Navbar>                
+                    </Navbar>        
+                    <CarTitleName carTitle={'Model 3'}/>  
+                    <CarConfigBtn btnText={'CONFIGURATION PERSONNALISEE'}/>      
             </MainBackgroundImage>
         </div>
         

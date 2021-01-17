@@ -3,3 +3,8 @@
     color: black; 
     margin: auto; 
 }
+
+.NavbarItem:hover {
+    color: black; 
+    cursor: pointer; 
+}

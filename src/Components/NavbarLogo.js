@@ -1,12 +1,12 @@
 import React from 'react'; 
 import './NavbarLogo.css'; 
-import NavbarLogoImage from '../image/navbar-logo.png'
+import NavbarLogoImage from '../image/navbar-tesla-logo.svg'
 
 
 
 function NavbarLogo(){
     return (
-                <a className=''>
+                <a href='#' className='NavbarLogoContainer'>
                     <img src={NavbarLogoImage} className='NavbarLogo'/>
                 </a>
     )
@@ -19,3 +19,4 @@ export default NavbarLogo;
                     <img src={NavbarLogoImage} className='NavbarLogo'/>
                 </a>
         </div>*/ 
+

@@ -1,0 +1,12 @@
+.CarTitleNameContainer{
+    display: flex; 
+    align-items: center;
+}
+
+.CarTitleName {
+    color: #393c41;
+    margin: auto; 
+    margin-top : 40px; 
+    font-family: 'Gotham';
+    font-size: 40px; 
+}
