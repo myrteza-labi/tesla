@@ -8,6 +8,7 @@ import SideMenuBtn from './SideMenuBtn';
 import CarTitleName from './CarTitleName'; 
 import CarConfigBtn from './CarConfigBtn'; 
 import AsideMenu from './AsideMenu';  
+import AsideMenuItems from './AsideMenuItems'; 
 import './App.css';
 
 
@@ -17,12 +18,15 @@ function App(){
             <MainBackgroundImage>
                     <Navbar>
                         <NavbarLogo/>
-                            <NavbarItem carName='MODEL 3'/>
-                            <SideMenuBtn/>
+                        <NavbarItem carName='MODEL 3'/>
+                        <SideMenuBtn/>
                     </Navbar>        
                     <CarTitleName carTitle={'Model 3'}/>  
                     <CarConfigBtn btnText={'CONFIGURATION PERSONNALISEE'}/>      
             </MainBackgroundImage>
+            <AsideMenu>
+            <AsideMenuItems carName={'MODEL 3'}/>
+            </AsideMenu>
         </div>
         
     )

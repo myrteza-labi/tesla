@@ -1,12 +1,13 @@
 
 import React from 'react'; 
-import './AsideMenu'; 
+import './AsideMenu.css'; 
 
 function AsideMenu(props){
     return (
         <div className='AsideMenuContainer'>
-
+            {props.children}
         </div>
+        
     )
 }
 

@@ -6,7 +6,7 @@ import NavbarLogoImage from '../image/navbar-tesla-logo.svg'
 
 function NavbarLogo(){
     return (
-                <a href='#' className='NavbarLogoContainer'>
+                <a href='#App' className='NavbarLogoContainer'>
                     <img src={NavbarLogoImage} className='NavbarLogo'/>
                 </a>
     )

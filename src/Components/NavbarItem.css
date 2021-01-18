@@ -1,7 +1,6 @@
 .NavbarItem {
     text-decoration: none; 
     color: black; 
-    margin: auto; 
 }
 
 .NavbarItem:hover {
