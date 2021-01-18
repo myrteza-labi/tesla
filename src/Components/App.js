@@ -12,24 +12,48 @@ import AsideMenuItems from './AsideMenuItems';
 import './App.css';
 
 
-function App(){
-    return (
-        <div className='App'>
-            <MainBackgroundImage>
-                    <Navbar>
-                        <NavbarLogo/>
-                        <NavbarItem carName='MODEL 3'/>
-                        <SideMenuBtn/>
-                    </Navbar>        
-                    <CarTitleName carTitle={'Model 3'}/>  
-                    <CarConfigBtn btnText={'CONFIGURATION PERSONNALISEE'}/>      
-            </MainBackgroundImage>
-            <AsideMenu>
-            <AsideMenuItems carName={'MODEL 3'}/>
-            </AsideMenu>
-        </div>
+class App extends React.Component{
+    constructor(props){
+        super(props); 
+        this.state = {
+            asideNavbarDisplay : 'none',
+        }
+        this.handleClickMainBackgroundImg = this.handleClickMainBackgroundImg.bind(this);
+        this.handleClickSideMenuBtn = this.handleClickSideMenuBtn.bind(this);
+
+    }
+    handleClickMainBackgroundImg(){
+        if(this.state.asideNavbarDisplay=='block'){
+            this.setState({asideNavbarDisplay: 'none'})
+        }
+    }
+    handleClickSideMenuBtn(){
+        if(this.state.asideNavbarDisplay=='none'){
+            this.setState({asideNavbarDisplay: 'block'})
+        }
+    }
+    render(){
+
         
-    )
+        return (
+            <div className='App'>
+                <MainBackgroundImage onClick={() => {this.handleClickMainBackgroundImg()}}>
+                        <Navbar>
+                            <NavbarLogo/>
+                            <NavbarItem carName='MODEL 3'/>
+                            <SideMenuBtn onClick={()=> {this.handleClickSideMenuBtn()}}/>
+                        </Navbar>        
+                        <CarTitleName carTitle={'Model 3'}/>  
+                        <CarConfigBtn btnText={'CONFIGURATION PERSONNALISEE'}/>      
+                </MainBackgroundImage>
+                <AsideMenu display={this.state.asideNavbarDisplay}>
+                <AsideMenuItems carId='model-3' carName={'MODEL 3'}/>
+                </AsideMenu>
+            </div>
+            
+        )
+    }
+    
 } 
 
 export default App; 

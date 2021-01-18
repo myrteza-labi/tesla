@@ -3,8 +3,9 @@ import React from 'react';
 import './AsideMenu.css'; 
 
 function AsideMenu(props){
+    const display = props.display; 
     return (
-        <div className='AsideMenuContainer'>
+        <div id='AsideMenuContainer' style={{display:display}}className='AsideMenuContainer'>
             {props.children}
         </div>
         

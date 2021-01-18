@@ -3,8 +3,10 @@ import './AsideMenuItems.css';
 
 function AsideMenuItems(props){
     const carName = props.carName; 
+    const carId = props.carId; 
+
     return (
-    <h3 carName={carName} className='AsideMenuItems'><a href='#'>{carName}</a></h3>
+        <h3 id={carId}  carName={carName} className='AsideMenuItems'><a id='testA' href='#'>{carName}</a></h3>
     )
 }
 
